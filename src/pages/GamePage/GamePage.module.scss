@@ -1,0 +1,35 @@
+.container {
+  padding: 0 25px;
+  padding-bottom: 15px;
+}
+.container__title {
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-left: 12px;
+}
+.error {
+  color: $color-red;
+  font-family: $font-stack;
+  font-size: 0.8;
+  font-weight: 400;
+  padding-left: 8px;
+}
+.container__back {
+  position: fixed;
+  top: 115px;
+  left: 6px;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 4px 8px;
+  border-radius: 40px;
+  color: $color-blue;
+  background-color: $color-disabled;
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+    cursor: pointer;
+  }
+}

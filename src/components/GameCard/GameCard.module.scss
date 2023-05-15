@@ -1,0 +1,48 @@
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+  padding: 3px;
+  width: 210px;
+  font-family: $font-stack;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.gameCard__image {
+  border-radius: 10px;
+  padding: 5px;
+  border: 3px solid transparent;
+  width: 192px;
+  height: 224px;
+  object-fit: cover;
+
+  &:hover {
+    border: 3px solid $color-blue;
+    -webkit-filter: brightness(90%); /* Safari 6.0 - 9.0 */
+    filter: brightness(90%);
+  }
+}
+
+.gameCard__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.info__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.info__realiseYear {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.info__price {
+  font-size: 1rem;
+}

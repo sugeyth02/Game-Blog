@@ -1,0 +1,92 @@
+.container {
+  bottom: 0;
+  padding: 35px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-base;
+  color: $color-white;
+  flex-wrap: wrap;
+}
+.container__reserved {
+  font-family: $font-stack;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.container__info {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.info__link {
+  font-family: $font-stack;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 100%;
+  text-decoration: none;
+  color: $color-white;
+}
+.info__link:hover {
+  color: $color-yellow;
+  cursor: pointer;
+}
+.info__icon {
+  font-size: 2rem;
+}
+.info__icon:hover {
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(53, 53, 230);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
+@media (max-width: 1014px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .container__info {
+    width: 100%;
+  }
+}

@@ -1,0 +1,69 @@
+.navBar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  background-color: $color-black;
+}
+.navBar__header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: $color-black;
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 5px;
+  color: $color-white;
+}
+.navBar__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8px;
+  -moz-box-shadow: 0 5px 5px $color-gray_opacity;
+  -webkit-box-shadow: 0 5px 5px $color-gray_opacity;
+  box-shadow: 0 5px 5px $color-gray_opacity;
+  background-color: $color-white;
+  top: 0px;
+}
+.content__home {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-family: $font-stack;
+  justify-content: flex-start;
+  align-items: center;
+  color: $color-black;
+  gap: 8px;
+  text-decoration: none;
+}
+.content__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.content__home:hover {
+  cursor: pointer;
+}
+.content__icon {
+  color: $color-base;
+  font-size: 1.7rem;
+}
+.content__logIn {
+  border: none;
+  margin-right: 8px;
+  border-radius: 9px;
+  background-color: $color-blue;
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-family: $font-stack;
+  font-weight: 500;
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-green;
+    cursor: pointer;
+  }
+}
